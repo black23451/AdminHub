@@ -1,1 +1,375 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local AdminHUB = Instance.new("ScreenGui")
+local HUB = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local AnimationButton = Instance.new("TextButton")
+local HATButton = Instance.new("TextButton")
+local HATScript = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Animation = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local FeMemeusScript = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local FeWallScript = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local FeLongLegsScript = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local FeHeadHoldScript = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local LoadingHUB = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Bar1 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Bar2 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+AdminHUB.Name = "AdminHUB"
+AdminHUB.Parent = game.CoreGui
+AdminHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HUB.Name = "HUB"
+HUB.Parent = AdminHUB
+HUB.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+HUB.BorderSizePixel = 0
+HUB.Position = UDim2.new(-0.324999988, 0, 0.430999994, 0)
+HUB.Size = UDim2.new(0, 373, 0, 240)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = HUB
+
+TextLabel.Parent = HUB
+TextLabel.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 373, 0, 37)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "AdminHUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 1.000
+TextLabel.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = TextLabel
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.906166136, 0, -0.0187960565, 0)
+Close.Size = UDim2.new(0, 35, 0, 37)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 25.000
+Close.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = HUB
+Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0160857905, 0, 0.199840575, 0)
+Main.Size = UDim2.new(0, 360, 0, 26)
+
+UICorner_2.Parent = Main
+
+AnimationButton.Name = "AnimationButton"
+AnimationButton.Parent = Main
+AnimationButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimationButton.BackgroundTransparency = 1.000
+AnimationButton.Position = UDim2.new(0.0221606791, 0, 0, 0)
+AnimationButton.Size = UDim2.new(0, 66, 0, 26)
+AnimationButton.Font = Enum.Font.SourceSansBold
+AnimationButton.Text = "Animation"
+AnimationButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnimationButton.TextSize = 14.000
+
+HATButton.Name = "HATButton"
+HATButton.Parent = Main
+HATButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HATButton.BackgroundTransparency = 1.000
+HATButton.Position = UDim2.new(0.240943402, 0, 0, 0)
+HATButton.Size = UDim2.new(0, 58, 0, 26)
+HATButton.Font = Enum.Font.SourceSansBold
+HATButton.Text = "HAT Script"
+HATButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HATButton.TextSize = 14.000
+
+HATScript.Name = "HATScript"
+HATScript.Parent = HUB
+HATScript.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+HATScript.Position = UDim2.new(0.0160857905, 0, 0.377272666, 0)
+HATScript.Size = UDim2.new(0, 360, 0, 140)
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = HATScript
+
+Animation.Name = "Animation"
+Animation.Parent = HUB
+Animation.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Animation.Position = UDim2.new(0.0160857905, 0, 0.377272666, 0)
+Animation.Size = UDim2.new(0, 7, 0, 140)
+Animation.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Animation
+
+FeMemeusScript.Name = "FeMemeusScript"
+FeMemeusScript.Parent = Animation
+FeMemeusScript.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FeMemeusScript.Position = UDim2.new(0.0250000004, 0, 0.0859375, 0)
+FeMemeusScript.Size = UDim2.new(0, 74, 0, 25)
+FeMemeusScript.Visible = false
+FeMemeusScript.Font = Enum.Font.SourceSansBold
+FeMemeusScript.Text = "FE Memeus"
+FeMemeusScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeMemeusScript.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = FeMemeusScript
+
+FeWallScript.Name = "FeWallScript"
+FeWallScript.Parent = Animation
+FeWallScript.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FeWallScript.Position = UDim2.new(0.275000006, 0, 0.0859375, 0)
+FeWallScript.Size = UDim2.new(0, 74, 0, 25)
+FeWallScript.Visible = false
+FeWallScript.Font = Enum.Font.SourceSansBold
+FeWallScript.Text = "FE Wall"
+FeWallScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeWallScript.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = FeWallScript
+
+FeLongLegsScript.Name = "FeLongLegsScript"
+FeLongLegsScript.Parent = Animation
+FeLongLegsScript.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FeLongLegsScript.Position = UDim2.new(0.516666651, 0, 0.0859375, 0)
+FeLongLegsScript.Size = UDim2.new(0, 74, 0, 25)
+FeLongLegsScript.Visible = false
+FeLongLegsScript.Font = Enum.Font.SourceSansBold
+FeLongLegsScript.Text = "FE LongLegs"
+FeLongLegsScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeLongLegsScript.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = FeLongLegsScript
+
+FeHeadHoldScript.Name = "FeHeadHoldScript"
+FeHeadHoldScript.Parent = Animation
+FeHeadHoldScript.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FeHeadHoldScript.Position = UDim2.new(0.763888896, 0, 0.0859375, 0)
+FeHeadHoldScript.Size = UDim2.new(0, 74, 0, 25)
+FeHeadHoldScript.Visible = false
+FeHeadHoldScript.Font = Enum.Font.SourceSansBold
+FeHeadHoldScript.Text = "FE Head Hold"
+FeHeadHoldScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeHeadHoldScript.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = FeHeadHoldScript
+
+LoadingHUB.Name = "LoadingHUB"
+LoadingHUB.Parent = AdminHUB
+LoadingHUB.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+LoadingHUB.BorderSizePixel = 0
+LoadingHUB.Position = UDim2.new(0.420825005, 0, 0.490540475, 0)
+LoadingHUB.Size = UDim2.new(0, 360, 0, 100)
+
+Name.Name = "Name"
+Name.Parent = LoadingHUB
+Name.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Name.BorderSizePixel = 0
+Name.Size = UDim2.new(0, 360, 0, 41)
+Name.Font = Enum.Font.SourceSansBold
+Name.Text = "AdminHUB"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 40.000
+Name.TextWrapped = true
+
+UICorner_9.Parent = LoadingHUB
+
+Bar1.Name = "Bar1"
+Bar1.Parent = LoadingHUB
+Bar1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar1.BorderSizePixel = 0
+Bar1.ClipsDescendants = true
+Bar1.Position = UDim2.new(0.0250000004, 0, 0.486339808, 0)
+Bar1.Size = UDim2.new(0, 341, 0, 36)
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = Bar1
+
+Bar2.Name = "Bar2"
+Bar2.Parent = Bar1
+Bar2.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+Bar2.BorderSizePixel = 0
+Bar2.ClipsDescendants = true
+Bar2.Size = UDim2.new(0, 0, 0, 36)
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = Bar2
+
+Open.Name = "Open"
+Open.Parent = AdminHUB
+Open.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Open.Position = UDim2.new(0, 0, 0.504000008, 0)
+Open.Size = UDim2.new(0, 120, 0, 50)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSansBold
+Open.Text = "OPEN"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_12.Parent = Open
+
+-- Scripts:
+
+local function OOJSTK_fake_script() -- AdminHUB.SmoothDrag 
+	local script = Instance.new('LocalScript', AdminHUB)
+
+	local Drag = script.Parent.Parent.AdminHUB.HUB
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local function update(input)
+		local delta = input.Position - dragStart
+		local dragTime = 0.04
+		local SmoothDrag = {}
+		SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+		dragSmoothFunction:Play()
+	end
+	Drag.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = Drag.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	Drag.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging and Drag.Size then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(OOJSTK_fake_script)()
+local function VMBIQJK_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.HUB:TweenPosition(UDim2.new(-0.37, 0,0.446, 0))
+		script.Parent.Parent.Parent.Parent.Open.Visible = true
+	end)
+end
+coroutine.wrap(VMBIQJK_fake_script)()
+local function GVJYQP_fake_script() -- AnimationButton.AnimationLocalScript 
+	local script = Instance.new('LocalScript', AnimationButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Animation.Visible = true -- Visible true
+		script.Parent.Parent.Parent.HATScript.Visible = false
+		wait(0.5) -- wait 0.5
+		script.Parent.Parent.Parent.Animation:TweenSize(UDim2.new(0, 360,0, 140)) -- Text Color
+		script.Parent.Parent.AnimationButton.TextColor3 = Color3.new(0.333333, 0.666667, 1) -- Text Color
+		script.Parent.Parent.HATButton.TextColor3 = Color3.new(1, 1, 1) -- Text Color
+		wait(0.9) -- wait 0.9
+		script.Parent.Parent.Parent.HATScript:TweenSize(UDim2.new(0, 7,0, 140)) -- Hat Frame Close
+		script.Parent.Parent.Parent.Animation.FeLongLegsScript.Visible = true -- Visible true
+		script.Parent.Parent.Parent.Animation.FeMemeusScript.Visible = true -- Visible true
+		script.Parent.Parent.Parent.Animation.FeWallScript.Visible = true -- Visible true
+		script.Parent.Parent.Parent.Animation.FeHeadHoldScript.Visible = true -- Visible true
+	end)
+end
+coroutine.wrap(GVJYQP_fake_script)()
+local function QUYM_fake_script() -- HATButton.HATButtonLocalScript 
+	local script = Instance.new('LocalScript', HATButton)
+
+	
+end
+coroutine.wrap(QUYM_fake_script)()
+local function COVUL_fake_script() -- FeMemeusScript.LocalScript 
+	local script = Instance.new('LocalScript', FeMemeusScript)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
+	end)
+end
+coroutine.wrap(COVUL_fake_script)()
+local function PNAUTZF_fake_script() -- FeWallScript.LocalScript 
+	local script = Instance.new('LocalScript', FeWallScript)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/AY6kA2AV"))()
+	end)
+end
+coroutine.wrap(PNAUTZF_fake_script)()
+local function LUFAKKU_fake_script() -- FeLongLegsScript.LocalScript 
+	local script = Instance.new('LocalScript', FeLongLegsScript)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/2vbYR75P"))()
+	end)
+end
+coroutine.wrap(LUFAKKU_fake_script)()
+local function CWSA_fake_script() -- FeHeadHoldScript.LocalScript 
+	local script = Instance.new('LocalScript', FeHeadHoldScript)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jsZHrVFf"))()
+	end)
+end
+coroutine.wrap(CWSA_fake_script)()
+local function DQPKP_fake_script() -- Bar2.LocalScript 
+	local script = Instance.new('LocalScript', Bar2)
+
+	wait(1)
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",6)
+	wait(8)
+	script.Parent.Parent.Parent.Parent.LoadingHUB:TweenPosition(UDim2.new(-0.413, 0,0.491, 0))
+	wait(2)
+	script.Parent.Parent.Parent.Parent.LoadingHUB.Visible = false
+	script.Parent.Parent.Parent.Parent.HUB:TweenPosition(UDim2.new(0.37, 0,0.446, 0))
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Credit";
+		Text = "Owner:user2#0818";
+		Duration = 5;
+		Button1 = "OK";
+	})
+end
+coroutine.wrap(DQPKP_fake_script)()
+local function PWEEMPZ_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HUB:TweenPosition(UDim2.new(0.37, 0,0.446, 0))
+		script.Parent.Parent.Open.Visible = false
+	end)
+end
+coroutine.wrap(PWEEMPZ_fake_script)()
